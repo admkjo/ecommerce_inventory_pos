@@ -1,0 +1,153 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+}
+
+/* Header & Navigation */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #2C3E50;
+    color: #fff;
+    padding: 15px 5%;
+}
+
+header .logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    background: #1ABC9C;
+    border-radius: 5px;
+}
+
+.btn-login, .btn-register {
+    background: #1ABC9C;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.btn-login:hover, .btn-register:hover {
+    background: #16A085;
+}
+
+.btn-logout {
+    background: #E74C3C;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.btn-logout:hover {
+    background: #C0392B;
+}
+
+/* Hero Section */
+.hero {
+    background: url("../assets/hero-bg2.jpg") no-repeat center center/cover;
+	background-color: rgba(255,255,255,0.4);
+	background-blend-mode: lighten;
+    color: #000066;
+    text-align: center;
+    padding: 100px 5%;
+}
+
+.hero-content h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.btn-primary {
+    text-decoration: none;
+    color: white;
+    background: #1ABC9C;
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.btn-primary:hover {
+    background: #16A085;
+}
+
+/* Features Section */
+.features {
+    text-align: center;
+    padding: 50px 5%;
+    background: white;
+}
+
+.features h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+.feature-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.feature-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    text-align: center;
+}
+
+.feature-card img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+}
+
+.feature-card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.feature-card p {
+    font-size: 14px;
+    color: #666;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #2C3E50;
+    color: white;
+    margin-top: 30px;
+}
