@@ -65,6 +65,7 @@ CREATE TABLE `order_items` (
 
 CREATE TABLE `products` (
   `id` int(11) NOT NULL,
+  `vendor` int(11) NOT NULL,
   `name` varchar(255) NOT NULL,
   `description` text NOT NULL,
   `price` decimal(10,2) NOT NULL,
@@ -82,7 +83,7 @@ CREATE TABLE `users` (
   `username` varchar(100) NOT NULL,
   `email` varchar(150) NOT NULL,
   `password` varchar(255) NOT NULL,
-  `role` enum('admin','cashier','customer') NOT NULL DEFAULT 'customer',
+  `role` enum('admin','cashier','customer', 'vendor') NOT NULL DEFAULT 'customer',
   `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
