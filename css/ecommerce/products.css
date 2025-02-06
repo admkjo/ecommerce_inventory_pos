@@ -1,0 +1,73 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #eef1f5;
+    text-align: center;
+}
+
+h1 {
+    color: #2c3e50;
+    margin-top: 20px;
+    font-size: 28px;
+}
+
+table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+thead {
+    background-color: #34495e;
+    color: white;
+}
+
+thead th {
+    padding: 15px;
+    border: 1px solid #ddd;
+    text-transform: uppercase;
+}
+
+tbody td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    color: #2c3e50;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f7f9fc;
+}
+
+img {
+    border-radius: 5px;
+    max-width: 60px;
+    height: auto;
+}
+
+a {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 15px;
+    color: white;
+    background-color: #e74c3c;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+    font-weight: bold;
+}
+
+a:hover {
+    background-color: #c0392b;
+}
+
+/* Style for empty product message */
+.empty-products {
+    font-size: 20px;
+    color: #7f8c8d;
+    margin-top: 20px;
+}

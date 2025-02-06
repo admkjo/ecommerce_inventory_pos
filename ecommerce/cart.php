@@ -48,6 +48,7 @@ $totalPrice = 0;
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shopping Cart</title>
+    <link rel="stylesheet" href="../css/ecommerce/cart.css">
    
 </head>
 <body>
@@ -80,10 +81,11 @@ $totalPrice = 0;
     </table>
 
     <p>Cart Total: $<?php echo number_format($totalPrice, 2); ?></p>
-
+        
+        <a href="products.php">Continue Shopping</a>
         <a href="checkout.php">Proceed to Checkout</a>
-        <a href="products.php">← Continue Shopping</a>
-    
+        
+
 
 <?php else: ?>
     <p>Your cart is empty.</p>
