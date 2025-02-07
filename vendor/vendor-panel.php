@@ -3,7 +3,7 @@
     require '../config/database.php';
 
     //Vendor Authentication check
-    if (!isset($_SESSION['USER_ID']) || $_SESSION['role'] !== 'vendor') {
+    if (!isset($_SESSION['user_id']) || $_SESSION['role'] !== 'vendor') {
         header("Location: auth/login.php");
         exit();
     }
