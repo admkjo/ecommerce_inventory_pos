@@ -74,7 +74,7 @@
         <button type="submit">Update Product</button>
     </form>
 
-    <a href="vendor-panel.php">Back to Admin Panel</a>
+    <a href="vendor-panel.php">Back to Vendor Panel</a>
 
 </body>
 </html>
