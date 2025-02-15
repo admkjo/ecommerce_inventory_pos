@@ -14,21 +14,30 @@
     }
 
     $product_id = $_GET['id'];
+
+    //Fetch product details
     $stmt = $pdo -> prepare("SELECT * FROM products WHERE id = ?");
     $stmt -> execute([$product_id]);
     $product = $stmt -> fetch(PDO::FETCH_ASSOC);
 
-    // if product not found, show error
+    // If product not found, show error
     if (!$product) {
         die("Product not found.");
     }
+
+       // Initialize variables
+       $name = $product['name'];
+       $description = $product['description'];
+       $price = $product['price'];
+       $image = $product['image'];
+
 
     //Handle form submission to update the product
     if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $name = $_POST['name'];
         $description = $_POST['description'];
         $price = $_POST['price'];
-    }
+    
 
     //Handle image upload (if a new image is uploaded)
     if ($_FILES['image']['name']) {
@@ -44,6 +53,7 @@
 
     header("Location: vendor-panel.php?success=Product updated successfully. ");
         exit;
+}
 ?>
 
 <!DOCTYPE html>
