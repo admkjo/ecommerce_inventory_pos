@@ -20,7 +20,7 @@
             //Define the target directory
             $targetDir = "../uploads/";
             $targetFile = $targetDir . basename($_FILES['image']['name']);
-            $imageFileTYPE = strtolower(pathinfo($targetFile, PATHINFO_EXTENSION));
+            $imageFileType = strtolower(pathinfo($targetFile, PATHINFO_EXTENSION));
 
         // Check if file is an image
             $check = getimagesize($_FILES['image']['tmp_name']);
@@ -47,7 +47,7 @@
         //Insert the product into the database
         $stmt = $pdo -> prepare("INSERT INTO products (name, description, price, image) VALUES (?, ?, ?, ?) ");
         If ($stmt -> execute ([$name, $description, $price, $image])) {
-            header("Location: admin-panel.php?success=Product added successfully.");
+            header("Location: vendor-panel.php?success=Product added successfully.");
             exit;
         } else {
             echo "Error adding product.";
